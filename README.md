@@ -20,5 +20,55 @@ Built using **React** for the frontend, **Node.js + Express** for the backend, a
 **Database:** MongoDB (Mongoose ODM)
 
 ---
+##  Setup Instructions
 
+1 Clone the repository
+```bash
+git clone https://github.com/<your-username>/User_CRUD.git
+cd User_CRUD
+Clone the repository 
+```
+2️ Install dependencies
+Backend
+cd server
+npm install
+
+Frontend
+cd ../client
+npm install
+
+3️ Start the servers
+Backend
+npm start
+# runs on http://localhost:5000
+
+Frontend
+npm start
+# runs on http://localhost:3000
+
+🧠 Folder Structure
+User_CRUD/
+ ├── client/          # React frontend
+ │   ├── src/
+ │   └── package.json
+ ├── server/          # Node.js backend
+ │   ├── server.js
+ │   ├── models/
+ │   ├── routes/
+ │   └── package.json
+ └── README.md
+
+🌐 API Endpoints
+Method	Endpoint	Description
+GET	/api/users	Get all users
+GET	/api/users/:id	Get a single user
+POST	/api/users	Add a new user
+PUT	/api/users/:id	Update a user
+DELETE	/api/users/:id	Delete a user
+💻 Example MongoDB User Schema
+{
+  name: "Alice Johnson",
+  email: "alice@example.com",
+  role: "Admin"
+}
 
