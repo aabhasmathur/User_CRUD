@@ -13,8 +13,7 @@ export default function UsersDashboard() {
     Segment: ''
   });
 
-  const API_URL = "http://localhost:4000/users"; 
-
+  const API_URL = "http://localhost:4000/users";
   const fetchUsers = async () => {
     try {
       const res = await fetch(API_URL);
